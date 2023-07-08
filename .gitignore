@@ -1,0 +1,13 @@
+# Ignore compiled or generated files
+*.html
+*.css
+*.js
+
+# Ignore minified or compressed files
+*.min.html
+*.min.css
+*.min.js
+
+# Ignore build or output directories
+/dist/
+/build/
