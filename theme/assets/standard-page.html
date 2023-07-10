@@ -12,50 +12,160 @@
         overflow: hidden;
       }
 
+
+
+      /* Slideshow  */
+
       .slideshow-container {
-        position: fixed;
+        position: relative;
+        height: 55vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .slideshow {
+        position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+        width: 300%;
+        height: 96%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: slide-animation 30s linear infinite;
       }
 
       .slideshow img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+
+        height: 40vh; /* Adjust the image height as needed */
+        width: auto; /* Automatically adjust the width */
+        object-fit: contain; /* Maintain aspect ratio and fit within the container */
       }
 
-      .slideshow-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+
+      .content {
+        text-align: center;
+        position: relative; /* Add position relative */
+        z-index: 1; /* Set a higher z-index value */
       }
 
-      .slideshow img {
-        width: 10%;
-        height: 10%;
-        object-fit: cover;
+      @keyframes slide-animation {
+        0%, 100%  {
+          transform: translateX(10);
+        }
+        50% {
+          transform: translateX(-80%);
+        }
+      }
+      .slide-caption {
+        position: absolute;
+        bottom: -30px; /* Adjust the position of the caption */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        color: #fff;
+        text-align: center;
       }
 
+      .slide-caption p {
+        margin: 0;
+
+      }
+
+
+
+
+
+
+
+      .about-site {
+        font-size: 16px;
+        color: black;
+        margin-top: -50px;
+      }
+
+      .about-site {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .about-site h2 {
+        font-size: 24px;
+
+      }
+
+      .about-site p {
+        font-size: 16px;
+
+      }
+
+
+      .about-site {
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        background-image: url("_/theme/About-background.jpg");
+        hight:100
+          background-size: cover;
+        background-position: center;
+
+      }
 
     </style>
 
   </head>
-  <body>
-    <div class="slideshow-container">
+  <body>    
+    <div class="overlay">
+      <div class="top-box">
+        <header>
+          <nav>
+            <ul class="tabs">
+              <li><a href="#Home"><i class="fas fa-home"></i>Home</a></li>
+              <li><a href="_/theme/about-me.html" target="_self"><i class="fas fa-user"></i>About Me</a></li>
+              <li><a href="#education" target="_self"><i class="fas fa-graduation-cap"></i>Education</a></li>
+              <li><a href="#experience" target="_self"><i class="fas fa-briefcase"></i>Experience</a></li>
+              <li><a href="#projects" target="_self"><i class="fas fa-code"></i>Projects</a></li>
+              <li><a href="#contact" target="_self"><i class="fas fa-envelope"></i>Contact Me</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
 
-      <div class="slideshow">
-        <img src="_/theme/Slide4.JPG" alt="Image 1">
-        <img src="_/theme/Slide4.JPG" alt="Image 1">
-        <img src="_/theme/Slide4.JPG" alt="Image 1">
+
+    <main>
+      <div class="slideshow-container">
+
+        <div class="slideshow">
+          <img src="_/theme/Slide1.JPG" alt="Image 1">
+          <img src="_/theme/Slide2.JPG" alt="Image 2">
+          <img src="_/theme/Slide3.JPG" alt="Image 3">
+
+        </div>
 
       </div>
+      <div class="about-site">
+        <h1>Hello! </h1>
+        <p><h2>Thank you for visiting this website.</h2></p>
+        <h2>About the Site</h2>
+        <p>
+          Welcome to my website! Here, you will find comprehensive information about me, my skills, experiences, and achievements in the field of IT. I am a dedicated IT professional with a strong passion for technology and a drive to excel in my work. Within this website, you can explore various tabs to delve deeper into specific aspects of my IT journey. The tabs provide insights into my education, experience, projects, and more. Feel free to navigate through the different sections to get a comprehensive understanding of my IT background and expertise.I am committed to leveraging my technical skills, problem-solving abilities, and collaborative mindset to deliver exceptional results in every project I undertake. Through continuous learning and keeping up with industry advancements, I strive to stay at the forefront of technology and contribute meaningfully to the IT landscape. Should you have any questions or would like to connect with me, please don't hesitate to reach out. I look forward to connecting with you!
+        </p>
+        <!--         <img src="_/theme/About-background.jpg"> -->
+      </div>
 
-    </div>
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+
+
+
+
   </body>
 </html>
