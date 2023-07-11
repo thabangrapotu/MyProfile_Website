@@ -64,7 +64,7 @@
       .slideshow {
         position: relative;
       }
-      
+
       .message {
         position: absolute;
         top: 50%;
@@ -75,12 +75,12 @@
         text-align: center;
         background-color: rgba(0, 0, 0, 0.7);
         padding: 10px 20px;
-         animation: moveText 20s linear infinite;
+        animation: moveText 20s linear infinite;
       }
 
-         @keyframes moveText {
-/*         0% {
-          transform: translateX(100%);
+      @keyframes moveText {
+        /*         0% {
+        transform: translateX(100%);
         } */
         50% {
           transform: translateX(0);
@@ -93,15 +93,18 @@
 
       /* Slideshow  */
       .slideshow-container {
+        background-color:#40E0D0; 
         position: relative;
         height: 55vh;
         overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
+
       }
 
       .slideshow {
+
         position: absolute;
         top: 0;
         left: 0;
@@ -110,11 +113,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: slide-animation 40s linear infinite;
+        animation: slide-animation 50s linear infinite;
       }
 
       .slideshow img {
-
+        filter: brightness(1.2) contrast(1.5) saturate(1.2);
         height: 50vh; /* Adjust the image height as needed */
         width: auto; /* Automatically adjust the width */
         object-fit: contain; /* Maintain aspect ratio and fit within the container */
@@ -152,6 +155,13 @@
         z-index: 1; /* Set a higher z-index value */
       }
 
+      .message{
+        font-size: 12px;
+
+        margin-top: 0px;
+        text-align: center;
+        padding: 20px;
+      }
       .about-site {
         font-size: 16px;
         color: black;
