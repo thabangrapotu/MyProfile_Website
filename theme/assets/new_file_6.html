@@ -3,10 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience</title> 
+    <title>Experience</title>
+
+    <style>
+      /* Styles for the borders */
+      .border-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .border {
+        border: 2px solid #999;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        background-color: #f2f2f2;
+      }
+
+      /* Styles for the horizontal borders */
+      .horizontal-border {
+        height: 2px;
+        background-color: #999;
+        margin: 10px 0;
+      }
+
+      .soft-edge {
+        border-radius: 50%;
+      }
+    </style>
   </head>
   <body>
-<h1>Experience</h1>
+    <div class="horizontal-border"></div>
+    <div class="border-container">
+      <div class="border soft-edge">
+        <!-- Content for the first border -->
+      </div>
+      
+      <div class="border soft-edge">
+        <!-- Content for the second border -->
+      </div>
+      
+      <div class="border soft-edge">
+        <!-- Content for the third border -->
+      </div>
+      
+      <div class="border soft-edge">
+        <!-- Content for the fourth border -->
+      </div>
+    </div>
+    <div class="horizontal-border"></div>
   </body>
 
 </html>
