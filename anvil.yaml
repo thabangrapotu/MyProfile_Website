@@ -1,11 +1,13 @@
-allow_embedding: false
-package_name: M3_App_1
-name: M3 App 1
-startup_form: Form1
-renamed: true
-runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+package_name: My_Profile
+allow_embedding: false
+name: My Profile
+runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
+metadata: {title: My Profile, description: The content is solely for information relate to my career profile or details,
+  logo_img: 'asset:Capture.JPG'}
+startup_form: Form1
+renamed: true
