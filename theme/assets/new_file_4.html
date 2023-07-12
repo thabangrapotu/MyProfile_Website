@@ -3,9 +3,96 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Contact</title> 
+    <style>
+      .card-holder {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .container-name {
+        font-size: 24px;
+        margin-top: 0;
+      }
+
+      .contact-info {
+        margin-top: 20px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .contact-item i {
+        margin-right: 10px;
+      }
+
+      .contact-label {
+        font-weight: bold;
+        margin-right: 5px;
+      }
+
+      .contact-value {
+        color: #333;
+      }
+
+      #map {
+        height: 200px;
+        margin-top: 20px;
+      }
+
+    </style>
+
   </head>
   <body>
+    <div class="card-holder">
+      <h2 class="container-name">Contact Information</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span class="contact-label">Phone:</span>
+          <span class="contact-value">(+27)71-104-3768</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span class="contact-label">Email:</span>
+          <span class="contact-value">rapotuti@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="contact-label">Address:</span>
+          <span class="contact-value">Johannesburg, Gauteng</span>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function initMap() {
+        var location = {lat: -26.2041, lng: 28.0473}; // Coordinates for Johannesburg, Gauteng
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: location,
+          zoom: 10
+        });
+
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          title: 'Johannesburg, Gauteng'
+        });
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
   </body>
 
 </html>
