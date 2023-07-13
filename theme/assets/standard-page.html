@@ -45,8 +45,10 @@
         text-decoration: none;
         color: #333;
       }
-
-        .tabs a {
+      .tabs li a:hover {
+        background-color: lightgray;
+      }
+      .tabs a {
         display: block;
         padding: 10px;
         background-color: #3498db;
@@ -83,15 +85,11 @@
         margin-bottom: -15px;
         margin-top: 0px;
         text-align: center;
-        /*         padding: 20px; */
-
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
         color: #fff;
-
         background-color: rgba(0, 0, 0, 0);
         padding: 10px 20px;
         animation: moveText 20s linear infinite;
@@ -235,7 +233,7 @@
     <main>
 
       <div class="message">
-        <span class="moving-text"><br>Please feel free to click on any of the tabs above,To know about me &#x1F914;</span>
+        <span class="moving-text"><br><br>Please feel free to click on any of the tabs above,To know about me &#x1F914;</span>
       </div>
       <div class="about-site">
         <h1>Hello! </h1>
@@ -284,7 +282,9 @@
 
     <footer style="position: fixed; bottom: 0; left: 0; width: 100%; padding: 20px; text-align: center;">
       <span style="padding-left: 20px;">Names: Thabang Rapotu</span>
-      <span style="padding-left: 20px;">Email: rapotuti@gmail.com</span>
+     
+      <span style="padding-left: 20px;">Email: <a href="mailto:rapotuti@gmail.com">rapotuti@gmail.com</a></span>
+
       <span style="padding-left: 20px;">Contact number: (+27)71-104-3768</span>
       <span style="padding-left: 20px;">Address: Johannesburg, Gauteng </span>
 
