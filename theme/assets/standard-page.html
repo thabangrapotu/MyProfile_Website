@@ -46,10 +46,7 @@
         color: #333;
       }
 
-      /*       .tabs li a:hover {
-      background-color: lightgray;
-      } */
-      .tabs a {
+        .tabs a {
         display: block;
         padding: 10px;
         background-color: #3498db;
@@ -57,10 +54,6 @@
         text-decoration: none;
         border-radius: 5px;
       }
-
-      /*       .tabs a:hover {
-      background-color: Red; /* Change the color on hover */
-      } */
 
       .hexagonal-container {
         width: auto;
@@ -74,6 +67,7 @@
         height: auto;
         object-fit: cover;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+        clip-path: inset(22% 0 0 0);
         border-radius: 10px;
         background-clip: padding-box;
         mask-image: linear-gradient(to top, transparent 10%, white, white 90%, transparent);
@@ -120,7 +114,7 @@
       .slideshow-container {
         /*         background-color:#40E0D0;  */
         position: relative;
-        height: 50vh;
+        height: 45vh;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -138,12 +132,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: slide-animation 50s linear infinite;
+        animation: slide-animation 55s linear infinite;
       }
 
       .slideshow img {
         filter: brightness(1.2) contrast(1.5) saturate(1.2);
-        height: 50vh; /* Adjust the image height as needed */
+        height: 40vh; /* Adjust the image height as needed */
         width: auto; /* Automatically adjust the width */
         object-fit: contain; /* Maintain aspect ratio and fit within the container */
       }
@@ -216,16 +210,6 @@
 
       }
 
-      .me-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .me-content span {
-        padding: 10px;
-      }
-
     </style>
 
   </head>
@@ -251,7 +235,7 @@
     <main>
 
       <div class="message">
-        <span class="moving-text">Please feel free to click on any of the tabs above,To know about me &#x1F914;</span>
+        <span class="moving-text"><br>Please feel free to click on any of the tabs above,To know about me &#x1F914;</span>
       </div>
       <div class="about-site">
         <h1>Hello! </h1>
@@ -297,14 +281,14 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
-    <div class="me-content">
 
-      <span>Names: Thabang Rapotu</span>
-      <span>Email: rapotuti@gmail.com</span>
-      <span>Contact number: (+27)71-104-3768</span>
-      <span>Address: Johannesburg, Gauteng </span>
-    </div>
+    <footer style="position: fixed; bottom: 0; left: 0; width: 100%; padding: 20px; text-align: center;">
+      <span style="padding-left: 20px;">Names: Thabang Rapotu</span>
+      <span style="padding-left: 20px;">Email: rapotuti@gmail.com</span>
+      <span style="padding-left: 20px;">Contact number: (+27)71-104-3768</span>
+      <span style="padding-left: 20px;">Address: Johannesburg, Gauteng </span>
 
+    </footer>
 
 
   </body>
