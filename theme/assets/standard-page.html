@@ -63,17 +63,20 @@
       }
 
       .hexagonal-container {
-        width: 200px;
-        height: 200px;
+        width: auto;
+        height: auto;
         position: relative;
         overflow: hidden;
       }
 
-      .slideshow img {
-        width: 100%;
-        height: 100%;
+      .hexagonal-container img {
+        width: auto;
+        height: auto;
         object-fit: cover;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+        border-radius: 10px;
+        background-clip: padding-box;
+        mask-image: linear-gradient(to top, transparent 10%, white, white 90%, transparent);
       }
 
 
@@ -271,16 +274,16 @@
       <div class="slideshow-container" id="Home">
 
         <div class="slideshow">
-          <!--           <div class="hexagonal-container"> -->
-          <img src="_/theme/Slide1.JPG" alt="Image 1">
+          <div class="hexagonal-container">
+            <img src="_/theme/Slide1.JPG" alt="Image 1">
+          </div>
+          <!--           <div class="hexagonal-container">
+          <img src="_/theme/Slide2.JPG" alt="Image 2">
         </div>
-        <!--           <div class="hexagonal-container">
-        <img src="_/theme/Slide2.JPG" alt="Image 2">
-      </div>
-        <div class="hexagonal-container">
-        <img src="_/theme/Slide3.JPG" alt="Image 3">
-      </div> -->
-        <!--         </div> -->
+          <div class="hexagonal-container">
+          <img src="_/theme/Slide3.JPG" alt="Image 3">
+        </div> -->
+        </div>
 
       </div>
 
