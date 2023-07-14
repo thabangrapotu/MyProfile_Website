@@ -76,12 +76,7 @@
         mask-image: linear-gradient(to top, transparent 10%, white, white 90%, transparent);
       }
 
-      .hexagonal-container img:nth-of-type(2) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.1;
-      }
+
 
 
 
@@ -122,6 +117,7 @@
       .slideshow-container {
         /*         background-color:#40E0D0;  */
         position: relative;
+
         height: 45vh;
         overflow: hidden;
         display: flex;
@@ -149,7 +145,13 @@
         width: auto; /* Automatically adjust the width */
         object-fit: contain; /* Maintain aspect ratio and fit within the container */
       }
-
+      .hexagonal-container img:nth-of-type(2) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.1;
+        width: 1000;
+      }
 
       @keyframes slide-animation {
         0%, 100%  {
@@ -272,11 +274,11 @@
           </div>
           <div class="hexagonal-container">
             <img src="_/theme/Slide2.JPG" alt="Image 2">
-             <img src="_/theme/inquisitive.jpg" alt="Image 2" class=top-image>
+            <img src="_/theme/inquisitive.jpg" alt="Image 2" class=top-image>
           </div>
           <div class="hexagonal-container">
             <img src="_/theme/Slide3.JPG" alt="Image 3">
-             <img src="_/theme/innovative.jpg" alt="Image 2" class=top-image width="1000">
+            <img src="_/theme/innovative.jpg" alt="Image 2" class=top-image width="1000">
           </div>
         </div>
 
