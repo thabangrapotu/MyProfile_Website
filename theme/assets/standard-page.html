@@ -71,9 +71,19 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%);
         clip-path: inset(22% 0 0 0);
         border-radius: 10px;
+        opacity: 1;
         background-clip: padding-box;
         mask-image: linear-gradient(to top, transparent 10%, white, white 90%, transparent);
       }
+
+      .hexagonal-container img:nth-of-type(2) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.1;
+      }
+
+
 
 
       .slideshow {
@@ -258,12 +268,15 @@
         <div class="slideshow">
           <div class="hexagonal-container">
             <img src="_/theme/Slide1.JPG" alt="Image 1">
+            <img src="_/theme/analytical.jpg" alt="Image 1" class=top-image>
           </div>
           <div class="hexagonal-container">
             <img src="_/theme/Slide2.JPG" alt="Image 2">
+             <img src="_/theme/inquisitive.jpg" alt="Image 2" class=top-image>
           </div>
           <div class="hexagonal-container">
             <img src="_/theme/Slide3.JPG" alt="Image 3">
+             <img src="_/theme/innovative.jpg" alt="Image 2" class=top-image>
           </div>
         </div>
 
@@ -282,7 +295,7 @@
 
     <footer style="position: fixed; bottom: 0; left: 0; width: 100%; padding: 20px; text-align: center;">
       <span style="padding-left: 20px;">Names: Thabang Rapotu</span>
-     
+
       <span style="padding-left: 20px;">Email: <a href="mailto:rapotuti@gmail.com">rapotuti@gmail.com</a></span>
 
       <span style="padding-left: 20px;">Contact number: (+27)71-104-3768</span>
