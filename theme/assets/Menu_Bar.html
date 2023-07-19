@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+      body {
+        padding-top: 40px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .menu-button {
+        position: fixed;
+        top: 20px;
+        right: 35px;
+        cursor: pointer;
+        z-index: 999;
+      }
+
+      .menu-button span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+        margin-bottom: 6px;
+      }
+
+      .menu {
+        position: fixed;
+        top: 0;
+        right: 20px;
+        width: 700px;
+        height: 100%;
+
+        z-index: 998;
+        padding: 20px;
+        display: none;
+
+      }
+
+      .menu.show {
+        display: block;
+      }
+
+      .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Set display to flex for horizontal alignment */
+
+      }
+
+      .menu ul li {
+        margin-bottom: 10px;
+        margin-right: 20px; /* Adjust the spacing between tabs */
+
+
+      }
+
+      .menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        background-color: #f2f2f2;
+        border-radius:20px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-button" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="menu" id="menu">
+      <ul>
+
+
+        <li><a href="#Home" target="_self"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="_/theme/new_file.html" target="_self"><i class="fas fa-user"></i>About</a></li>
+        <li><a href="_/theme/new_file_2.html" target="_self"><i class="fas fa-graduation-cap"></i>Education</a></li>
+        <li><a href="_/theme/new_file_6.html" target="_self"><i class="fas fa-briefcase"></i>Experience</a></li>
+        <li><a href="_/theme/new_file_3.html" target="_self"><i class="fas fa-code"></i>Projects</a></li>
+        <li><a href="_/theme/new_file_4.html" target="_self"><i class="fas fa-envelope"></i>Contact</a></li>
+
+      </ul>
+    </div>
+
+    <!-- Rest of your content goes here -->
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
