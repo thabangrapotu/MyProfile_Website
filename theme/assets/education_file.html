@@ -4,12 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <style>
       body {
         text-align: center;
         background-color: #f0f7f9; 
       }
+
+      .menu-button {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        cursor: pointer;
+        z-index: 999;
+      }
+
+      .menu-button span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        right:30px;
+        background-color: #333;
+        margin-bottom: 6px;
+      }
+
+      .menu {
+        position: none;
+        top: 0;
+        right: 20px;
+        width: 700px;
+        height: 100%;
+
+        z-index: 999;
+        padding: 20px;
+        display: none;
+
+      }
+      .menu.show {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 200px;
+
+      }
+      .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Set display to flex for horizontal alignment */
+
+      }
+
+      .menu ul li {
+
+        margin-right: 20px; /* Adjust the spacing between tabs */
+
+
+      }
+
+      .menu ul li a {
+        text-decoration: none;
+
+        color: #333;
+        font-size: 12px;
+        background-color: #f2f2f2;
+        border-radius:20px;
+
+
+
+      }
+
 
       .page-name {
         font-size: 24px;
@@ -32,14 +97,37 @@
         text-align: center;
       }
 
-  
+
 
     </style>
   </head>
 
 
   <body>
-    <div class="page-name"><h2>Education</h2></div>
+    <div class="page-name"><h2>Education</h2>
+
+      <div class="menu-button" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+
+      <div class="menu" id="menu">
+        <ul>
+
+
+          <li><a href="https://tbang-online-site.anvil.app/#Home" target="_self"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="https://tbang-online-site.anvil.app/_/theme/about_file.html" target="_self"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="https://tbang-online-site.anvil.app/_/theme/education_file.html" target="_self"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="https://tbang-online-site.anvil.app/_/theme/experience_file.html" target="_self"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li><a href="https://tbang-online-site.anvil.app/_/theme/projects_file.html" target="_self"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="https://tbang-online-site.anvil.app/_/theme/contact_file.html" target="_self"><i class="fas fa-envelope"></i> Contact</a></li>
+
+        </ul>
+      </div>
+
+    </div>
     <div class="content">      
       <p>
         Greetings! Allow me to share my educational journey and the expertise I have acquired along the way. I am a firm believer in the power of knowledge and continuous learning to unlock new opportunities in the field of data science.
@@ -72,6 +160,15 @@
         <span style="padding-left: 20px;">Address: Johannesburg, Gauteng </span>
 
       </footer>
+
+      <script>
+        function toggleMenu() {
+          var menu = document.getElementById("menu");
+          menu.classList.toggle("show");
+        }
+
+      </script>
+
     </div>
   </body>
 
