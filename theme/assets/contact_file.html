@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Contact</title> 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
       body {
 
@@ -16,12 +16,12 @@
         background-image: url('_/theme/Slide3.JPG');
       }
 
- .menu-button {
+      .menu-button {
         position: absolute;
         top: 20px;
         right: 35px;
         cursor: pointer;
-        z-index: 999;
+        z-index: 1000;
       }
 
       .menu-button span {
@@ -48,8 +48,7 @@
       .menu.show {
         display: block;
         position: absolute;
-        top: 0px;
-        right: 200px;
+        left: 800px;
 
       }
       .menu ul {
@@ -69,7 +68,6 @@
 
       .menu ul li a {
         text-decoration: none;
-
         color: #333;
         font-size: 12px;
         background-color: #f2f2f2;
@@ -156,7 +154,7 @@
         </div>
 
       </div>
-  <div class="menu-button" onclick="toggleMenu()">
+      <div class="menu-button" onclick="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
@@ -172,14 +170,13 @@
           <li><a href="https://tbang-online-site.anvil.app/_/theme/education_file.html" target="_self"><i class="fas fa-graduation-cap"></i> Education</a></li>
           <li><a href="https://tbang-online-site.anvil.app/_/theme/experience_file.html" target="_self"><i class="fas fa-briefcase"></i> Experience</a></li>
           <li><a href="https://tbang-online-site.anvil.app/_/theme/projects_file.html" target="_self"><i class="fas fa-code"></i> Projects</a></li>
-          <li><a href="https://tbang-online-site.anvil.app/_/theme/contact_file.html" target="_self"><i class="fas fa-envelope"></i> Contact</a></li>
 
         </ul>
       </div>
 
     </div>
 
-    </div>
+  </div>
 
 
     <footer style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; text-align: center;">
@@ -190,13 +187,13 @@
 
     </footer>
 
-      <script>
-        function toggleMenu() {
-          var menu = document.getElementById("menu");
-          menu.classList.toggle("show");
-        }
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
 
-      </script>
+    </script>
 
 
   </body>
