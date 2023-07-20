@@ -1,13 +1,19 @@
-# Ignore compiled or generated files
-*.html
-*.css
-*.js
+# Files with these extensions will not be ignored when compiled or generated files
+#*.html
+#*.css
+#*.js
+#*.min.html
+#*.min.css
+#*.min.js
+#*.yaml
 
-# Ignore minified or compressed files
-*.min.html
-*.min.css
-*.min.js
 
-# Ignore build or output directories
+# Files with these extensions will be ignored when compiled or generated files
+*.py
+*.gitignore
+
+
+# Folders with these directories will be ignored when compiled or generated
 /dist/
 /build/
+/.git/
