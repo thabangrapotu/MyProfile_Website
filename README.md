@@ -6,7 +6,7 @@ Key features of the website include design, an interactive user interface, navig
 
 ## Table of Contents
 
-- [Main Files Directory](https://github.com/thabangrapotu/Data-Science-Projects/blob/main/Practices/Practice_1.ipynb](https://github.com/thabangrapotu/my-profile-website/tree/main/theme/assets)
+- [Main Files Directory](https://github.com/thabangrapotu/my-profile-website/tree/main/theme/assets)
 
 ## Getting Started
 
