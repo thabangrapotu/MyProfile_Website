@@ -7,11 +7,8 @@
 #*.min.js
 #*.yaml
 
-
 # Files with these extensions will be ignored when compiled or generated files
 *.py
-*.gitignore
-
 
 # Folders with these directories will be ignored when compiled or generated
 /dist/
