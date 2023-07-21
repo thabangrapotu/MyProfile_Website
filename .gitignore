@@ -9,6 +9,7 @@
 
 # Files with these extensions will be ignored when compiled or generated files
 *.py
+__init__.py
 
 # Folders with these directories will be ignored when compiled or generated
 /dist/
