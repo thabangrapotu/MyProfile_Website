@@ -24,11 +24,11 @@ The website is developed using the following technologies:
 1. Clone this repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/your-username/Website-Projects.git
+   git clone https://github.com/thabangrapotu/my-profile-website
 
  2. Navigate to the project directory of your choice:
     ```bash
-    cd Website-Projects/projects/projectX    
+    cd my-profile-website/projects/projectX    
 
 ## Contributing
 Contributions to this repository are welcome! If you have an interesting data science project that you would like to share or improve the  existing work, please follow these steps:
