@@ -6,10 +6,7 @@ Key features of the website include design, an interactive user interface, navig
 
 ## Table of Contents
 
-- [Practice I: Array Manipulation Using NumPy](https://github.com/thabangrapotu/Data-Science-Projects/blob/main/Practices/Practice_1.ipynb)
-- [Practice II: Data Visualization Using Matplotlib and Seaborn](https://github.com/thabangrapotu/Data-Science-Projects/blob/main/Practices/Practice%202.ipynb)
-- [Practice III: Probability and Statistics](https://github.com/thabangrapotu/Data-Science-Projects/blob/main/Practices/Practice_3.ipynb)
-- [Mini Project 01: Stock Market Analysis](https://github.com/thabangrapotu/Data-Science-Projects/blob/main/Projects/Mini_Project_01_Stock_Market_Analysis.ipynb)
+- [Main Files Directory](https://github.com/thabangrapotu/Data-Science-Projects/blob/main/Practices/Practice_1.ipynb](https://github.com/thabangrapotu/my-profile-website/tree/main/theme/assets)
 
 ## Getting Started
 
